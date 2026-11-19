@@ -1,0 +1,27 @@
+name: Bug report
+description: Something in Teleplay doesn't work as it should
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping. Please don't include personal information (email, real name, anything private). Security problems go to info@teleplay.ai, not here.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Game link (optional)
+      description: Only if the game is set to "Anyone with the link" or is on Discover.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: e.g. Chrome on Windows, Safari on iPhone
+    validations:
+      required: true
